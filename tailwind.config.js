@@ -13,6 +13,8 @@ export default {
         secondary: "#EFEEEA",
         tertiary: "#273F4F",
         default: "#1D2B53",
+        ground: "#FFFFFF",
+        clean: "#1E1E1E",
       },
       fontFamily: {
         poppins: ["Poppins"],
