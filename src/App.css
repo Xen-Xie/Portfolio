@@ -4,6 +4,6 @@
 
 @layer utilities {
     .iconstyle {
-      @apply w-7 h-7 hover:text-ground/65 transition-all duration-300 hover:scale-105;
+      @apply w-7 h-7 hover:text-clean/65 dark:hover:text-ground/65 transition-all duration-300 hover:scale-105;
     }
   }

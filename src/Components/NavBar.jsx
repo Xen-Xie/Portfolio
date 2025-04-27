@@ -17,7 +17,7 @@ function NavBar() {
   const menuItems = ["Home", "About", "Projects", "Resume", "Contact"];
 
   return (
-    <nav className="sticky top-0 z-50"> {/* 👈 added sticky */}
+    <nav className="sticky top-0 z-50">
       <Navbar onMenuOpenChange={setIsMenuOpen} isBordered>
         <NavbarContent>
           <NavbarMenuToggle

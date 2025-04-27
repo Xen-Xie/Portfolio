@@ -1,9 +1,16 @@
 import React from 'react'
+import HeroTitle from '../../Components/HeroTitle'
+import Circle from '../../Components/Circle'
+import ProjectCard from '../../Components/ProjectCard'
+import HContact from '../../Components/HContact'
 
 function Home() {
   return (
     <div>
-        Home
+        <HeroTitle />
+        <Circle />
+        <ProjectCard />
+        <HContact />
     </div>
   )
 }
