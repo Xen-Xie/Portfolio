@@ -12,13 +12,13 @@ function ProjectCard() {
     {
       image: 'Project3.png',
       title: 'Wizia Project',
-      about: 'This project is about booking restaurants.',
+      about: 'This project is about Internet exploring Tools',
       link: 'https://reactassigment.netlify.app/',
     },
     {
       image: 'Project4.png',
       title: 'Wern Finance Project',
-      about: 'This project is about booking restaurants.',
+      about: 'This project is about Debit and Credit card.',
       link: 'https://xenxie-finance.netlify.app/',
     },
   ];

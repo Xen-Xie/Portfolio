@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@heroui/react';
-import { Link } from '@heroui/react';
+import { Link } from 'react-router';
 
 function HContact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,7 +38,7 @@ function HContact() {
       >
         “Got a project idea? Let's connect!”
       </motion.h1>
-      <Link href='/contact'>
+      <Link to='/contact'>
       <Button variant="bordered" className="w-[150px] border-clean dark:border-ground font-inter hover:scale-105 transition-all duration-300">
         Contact Me
       </Button>
