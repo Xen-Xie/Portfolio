@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@heroui/react";
 import { motion } from "framer-motion";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function AContact() {
   return (
