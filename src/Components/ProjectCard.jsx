@@ -6,7 +6,7 @@ function ProjectCard() {
     {
       image: 'Project2.png',
       title: 'My Feedback Project',
-      about: 'This project is about booking restaurants.',
+      about: 'This project is about booking restaurants and Businesses.',
       link: 'https://myfeedbax.netlify.app/',
     },
     {
