@@ -14,7 +14,7 @@ import DarkModeToggle from "./DarkMode/DarkModeToggle";
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Home", "About", "Projects", "Resume", "Contact"];
+  const menuItems = ["Home", "About","Skills", "Projects", "Resume", "Contact"];
 
   return (
     <nav className="sticky top-0 z-50">
