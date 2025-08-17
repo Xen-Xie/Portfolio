@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef } from "react";
 import {
   SiHtml5,
@@ -8,6 +9,11 @@ import {
   SiGithub,
   SiFigma,
   SiPostman,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMongoose,
 } from "react-icons/si";
 import { motion, useInView } from "framer-motion";
 
@@ -15,12 +21,14 @@ const skills = [
   { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
   { name: "CSS", icon: <SiCss3 className="text-blue-500" /> },
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-  { name: "React", icon: <SiReact className="text-cyan-400" /> },
+  { name: "React JS", icon: <SiReact className="text-cyan-400" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
-  {
-    name: "GitHub",
-    icon: <SiGithub className="text-gray-500 dark:text-gray-300" />,
-  },
+  { name: "Next JS", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+  { name: "Node JS", icon: <SiNodedotjs className="text-green-600" /> },
+  { name: "Express JS", icon: <SiExpress className="text-gray-600 dark:text-gray-300" /> },
+  { name: "Mongoose", icon: <SiMongoose className="text-red-600" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+  { name: "GitHub", icon: <SiGithub className="text-gray-500 dark:text-gray-300" /> },
   { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
   { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
 ];

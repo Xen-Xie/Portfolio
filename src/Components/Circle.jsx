@@ -23,43 +23,103 @@ export default function SkillsSection() {
   const skills = [
     {
       name: "HTML",
-      desc: ["Semantic structure", "Accessibility first", "SEO optimization", "Clean markup", "Reusable templates"],
+      desc: [
+        "Semantic structure",
+        "Accessibility first",
+        "SEO optimization",
+        "Clean markup",
+        "Reusable templates",
+      ],
     },
     {
       name: "CSS",
-      desc: ["Responsive design", "Flexbox & Grid", "Custom animations", "Scalable styles", "Modern layouts"],
+      desc: [
+        "Responsive design",
+        "Flexbox & Grid",
+        "Custom animations",
+        "Scalable styles",
+        "Modern layouts",
+      ],
     },
     {
       name: "JavaScript",
-      desc: ["Dynamic interactivity", "ES6+ syntax", "Problem solving", "Async programming", "DOM manipulation"],
+      desc: [
+        "Dynamic interactivity",
+        "ES6+ syntax",
+        "Problem solving",
+        "Async programming",
+        "DOM manipulation",
+      ],
     },
     {
       name: "React JS",
-      desc: ["Reusable components", "Hooks API", "State management", "Performance optimization", "Modern workflows"],
+      desc: [
+        "Reusable components",
+        "Hooks API",
+        "State management",
+        "Performance optimization",
+        "Modern workflows",
+      ],
     },
     {
       name: "Tailwind CSS",
-      desc: ["Utility-first styling", "Responsive design", "Custom theming", "Rapid prototyping", "Consistent UI"],
+      desc: [
+        "Utility-first styling",
+        "Responsive design",
+        "Custom theming",
+        "Rapid prototyping",
+        "Consistent UI",
+      ],
     },
     {
       name: "Next JS",
-      desc: ["SSR & SSG", "API routes", "File-based routing", "Optimized performance", "SEO friendly"],
+      desc: [
+        "SSR & SSG",
+        "API routes",
+        "File-based routing",
+        "Optimized performance",
+        "SEO friendly",
+      ],
     },
     {
       name: "Node JS",
-      desc: ["Server-side JavaScript", "Event-driven architecture", "REST APIs", "Real-time apps", "Scalable backend"],
+      desc: [
+        "Server-side JavaScript",
+        "Event-driven architecture",
+        "REST APIs",
+        "Real-time apps",
+        "Scalable backend",
+      ],
     },
     {
       name: "Express JS",
-      desc: ["Routing & middleware", "API development", "Error handling", "Modular architecture", "Fast & minimal"],
+      desc: [
+        "Routing & middleware",
+        "API development",
+        "Error handling",
+        "Modular architecture",
+        "Fast & minimal",
+      ],
     },
     {
       name: "Mongoose",
-      desc: ["MongoDB schema design", "Data validation", "Query building", "Population & relations", "ODM for Node.js"],
+      desc: [
+        "MongoDB schema design",
+        "Data validation",
+        "Query building",
+        "Population & relations",
+        "ODM for Node.js",
+      ],
     },
     {
       name: "MongoDB",
-      desc: ["NoSQL database", "Document-oriented", "Scalable & flexible", "Aggregation framework", "Indexing & performance"],
+      desc: [
+        "NoSQL database",
+        "Document-oriented",
+        "Scalable & flexible",
+        "Aggregation framework",
+        "Indexing & performance",
+      ],
     },
   ];
 
@@ -76,7 +136,7 @@ export default function SkillsSection() {
           return (
             <motion.div
               key={index}
-              className={`flex flex-col sm:flex-row items-center gap-12 ${
+              className={`flex flex-col sm:flex-row items-center gap-6 sm:gap-12 ${
                 isLeft ? "sm:flex-row" : "sm:flex-row-reverse"
               }`}
               initial={{ opacity: 0, x: isLeft ? -100 : 100 }}
@@ -92,24 +152,23 @@ export default function SkillsSection() {
                 size="lg"
                 value={value}
                 classNames={{
-                  svg: "w-40 h-40 drop-shadow-md",
+                  svg: "w-28 h-28 sm:w-40 sm:h-40 drop-shadow-md",
                   indicator: "stroke-clean dark:stroke-ground",
                   track: "stroke-clean/10 dark:stroke-ground/10",
-                  value: "text-2xl font-semibold",
+                  value: "text-xl sm:text-2xl font-semibold",
                 }}
               />
 
               {/* Skill Text */}
               <div
-                className={`flex flex-col ${
-                  isLeft ? "items-start text-left" : "items-end text-right"
-                } gap-1`}
+                className={`flex flex-col items-center text-center sm:items-${
+                  isLeft ? "start" : "end"
+                } sm:text-${isLeft ? "left" : "right"} gap-1`}
               >
                 <h3 className="text-xl font-bold text-clean dark:text-ground font-inter">
                   {skill.name}
                 </h3>
 
-                {/* Staggered animation for each line */}
                 {skill.desc.map((line, i) => (
                   <motion.p
                     key={i}
