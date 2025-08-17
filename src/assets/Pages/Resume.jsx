@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@heroui/react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Button } from "@heroui/react";
 
 const MotionDiv = motion.div;
 
@@ -14,12 +14,20 @@ function Resume() {
         transition={{ duration: 0.5 }}
         className="text-center"
       >
-        <h1 className="text-3xl font-bold text-clean dark:text-ground font-poppins">My Resume</h1>
+        <h1 className="text-3xl font-bold text-clean dark:text-ground font-poppins">
+          My Resume
+        </h1>
         <p className="text-clean dark:text-ground mt-2">
-          Passionate Front-End Developer focused on building responsive and engaging user experiences.
+          Passionate Full-Stack Developer focused on building responsive,
+          scalable, and engaging web applications.
         </p>
         <a href="/resume.pdf" download>
-          <Button variant='bordered' className="mt-4 w-[160px] rounded-full dark:border-secondary">Download Resume</Button>
+          <Button
+            variant="bordered"
+            className="mt-4 w-[160px] rounded-full dark:border-secondary"
+          >
+            Download Resume
+          </Button>
         </a>
       </MotionDiv>
 
@@ -32,7 +40,18 @@ function Resume() {
       >
         <h2 className="text-xl font-semibold mb-2 font-poppins">Skills</h2>
         <div className="flex flex-wrap gap-3">
-          {['React.js', 'Tailwind CSS', 'JavaScript', 'Framer Motion', 'Figma', 'Git'].map((skill, i) => (
+          {[
+            "React.js",
+            "Tailwind CSS",
+            "JavaScript",
+            "Node.js",
+            "Next.js",
+            "Express.js",
+            "MongoDB",
+            "Framer Motion",
+            "Figma",
+            "Git",
+          ].map((skill, i) => (
             <span
               key={i}
               className="bg-primary/20 text-primary dark:text-ground dark:bg-secondary/30 px-3 py-1 rounded-full text-sm"
@@ -53,12 +72,25 @@ function Resume() {
         <h2 className="text-xl font-semibold mb-2 font-poppins">Experience</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="font-bold">Front-End Developer – Freelance</h3>
+            <h3 className="font-bold">Full-Stack Developer – Freelance</h3>
             <p className="text-sm">Jan 2024 – Present</p>
             <ul className="list-disc ml-6 text-sm mt-1">
-              <li>Built responsive websites using React and Tailwind CSS</li>
-              <li>Integrated animations using Framer Motion</li>
-              <li>Collaborated with clients to define UI/UX needs</li>
+              <li>
+                Built responsive frontend applications with React and Tailwind
+                CSS
+              </li>
+              <li>
+                Developed backend APIs with Node.js, Express.js, and MongoDB
+              </li>
+              <li>Integrated animations using Framer Motion for better UX</li>
+              <li>
+                Collaborated with clients to define UI/UX and backend
+                requirements
+              </li>
+              <li>
+                Deployed full-stack applications with optimized performance and
+                security
+              </li>
             </ul>
           </div>
         </div>
@@ -85,10 +117,14 @@ function Resume() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-xl font-semibold mb-2 font-poppins">Certifications</h2>
+        <h2 className="text-xl font-semibold mb-2 font-poppins">
+          Certifications
+        </h2>
         <ul className="list-disc ml-6 text-sm ">
           <li>Meta Front-End Developer (Coursera)</li>
           <li>Responsive Web Design (freeCodeCamp)</li>
+          <li>Node.js & Express.js (Self-Learned)</li>
+          <li>MongoDB for Developers (MongoDB University)</li>
         </ul>
       </MotionDiv>
     </section>
