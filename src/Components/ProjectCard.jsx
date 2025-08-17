@@ -32,19 +32,20 @@ function ProjectCard() {
           target="_blank"
           className="hover:scale-105 transition-transform duration-300"
         >
-          <div className="bg-tertiary dark:bg-ground rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col h-[400px] sm:h-[450px]">
-            {/* Image section */}
-            <div className="overflow-hidden h-2/3">
+          <div className="bg-tertiary dark:bg-ground rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col min-h-[300px]">
+            {/* Image section: preserve aspect ratio */}
+            <div className="w-full overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
+                style={{ aspectRatio: "16/9" }}
               />
             </div>
 
             {/* Text section */}
-            <div className="p-4 flex flex-col justify-between h-1/4">
-              <h1 className="text-lg font-bold font-poppins text-ground dark:text-tertiary text-center mb-2">
+            <div className="p-4 flex flex-col flex-grow space-y-5">
+              <h1 className="text-lg font-bold font-poppins text-ground dark:text-tertiary text-center">
                 {item.title}
               </h1>
               <p className="text-sm font-outfit text-ground dark:text-default text-center">
